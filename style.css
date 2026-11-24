@@ -1,0 +1,240 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F2E9D8;
+    color: #33382D;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* BANNER */
+
+.banner {
+    background-image: linear-gradient(
+        135deg,
+        #283B2B,
+        #556B48,
+        #78875D
+    );
+
+    color: #F2E9D8;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.nome-projeto {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.banner h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    font-size: 17px;
+}
+
+/* MENU */
+
+.menu {
+    background-color: #D9CBB0;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: #34432F;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 18px;
+    padding: 8px 4px;
+    transition: 0.3s;
+}
+
+/* EFEITOS DOS LINKS */
+
+.menu a:hover {
+    color: #71835B;
+    border-bottom: 2px solid #71835B;
+}
+
+.menu a:active {
+    color: #1E2D20;
+    background-color: #C7B797;
+}
+
+.menu a:visited {
+    color: #5B654F;
+}
+
+/* FOCO PARA NAVEGAÇÃO PELO TECLADO */
+
+a:focus-visible {
+    outline: 3px solid #8A9A70;
+    outline-offset: 5px;
+    border-radius: 4px;
+}
+
+/* SEÇÕES */
+
+.secao {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 35px 25px;
+    background-color: #FAF6EC;
+    border-radius: 12px;
+}
+
+.secao h2 {
+    color: #40533A;
+    font-size: 27px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D9CBB0;
+    padding-bottom: 10px;
+}
+
+.secao p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: #E7DDCA;
+    border-left: 5px solid #61764F;
+    border-radius: 8px;
+    padding: 22px;
+    flex: 1 1 250px;
+}
+
+.card h3 {
+    color: #40533A;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+/* PROJETOS */
+
+.projeto {
+    background-color: #EEE5D5;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #526747;
+    color: #F5EEDF;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* CONTATO */
+
+.contato {
+    text-align: center;
+}
+
+.contato p {
+    text-align: center;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #526747;
+    color: #F5EEDF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #35452E;
+    transform: translateY(-2px);
+}
+
+.botao:active {
+    background-color: #243324;
+    transform: scale(0.97);
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #34432F;
+    color: #F2E9D8;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .banner {
+        padding: 45px 15px;
+    }
+
+    .banner h1 {
+        font-size: 29px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+    }
+
+    .menu a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .secao {
+        margin: 20px 12px;
+        padding: 25px 18px;
+    }
+
+    .secao h2 {
+        font-size: 23px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
