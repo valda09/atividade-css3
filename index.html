@@ -1,140 +1,225 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMC | Mundo da Computação</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>AMC - Arquitetura e Manutenção de Computadores</title>
 </head>
+
 <body>
 
-    <header id="inicio">
-        <div class="banner">
-            <p class="nome-projeto">AMC | MUNDO DA COMPUTAÇÃO</p>
-
-            <h1>Aprendendo tecnologia</h1>
-
-            <p class="subtitulo">
-                Conhecimento, criatividade e novas descobertas.
-            </p>
-        </div>
-
-        <nav class="menu">
-            <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
+    <header>
+        <h1>AMC - Arquitetura e Manutenção de Computadores</h1>
+        <p>Conhecendo o funcionamento e os componentes do computador.</p>
     </header>
+
+    <hr>
+
+    <nav>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#bios">BIOS</a></li>
+            <li><a href="#placa">Peças da placa-mãe</a></li>
+            <li><a href="#tipos">Tipos de computador</a></li>
+            <li><a href="#seguranca">Segurança</a></li>
+            <li><a href="#sistemas">Sistemas operacionais</a></li>
+        </ul>
+    </nav>
+
+    <hr>
 
     <main>
 
-        <section id="sobre" class="secao">
-            <h2>Sobre mim</h2>
+        <section id="bios">
+            <h2>1. BIOS</h2>
 
             <p>
-                Sou estudante do curso Técnico em Informática e estou
-                aprendendo sobre o mundo da tecnologia, buscando desenvolver
-                minhas habilidades e descobrir novas possibilidades na área.
+                BIOS significa Basic Input/Output System
+                (Sistema Básico de Entrada e Saída).
+                É um programa responsável por iniciar o computador
+                e verificar se seus componentes estão funcionando.
             </p>
 
-            <p>
-                Tenho interesse em programação, criação de sites, design e
-                desenvolvimento de projetos. Gosto de aprender coisas novas,
-                explorar minha criatividade e transformar ideias em algo que
-                possa funcionar na prática.
-            </p>
+            <h3>Funções da BIOS:</h3>
+
+            <ul>
+                <li>Iniciar o computador.</li>
+                <li>Verificar os componentes de hardware.</li>
+                <li>Identificar problemas na inicialização.</li>
+                <li>Configurar dispositivos do computador.</li>
+                <li>Iniciar o carregamento do sistema operacional.</li>
+            </ul>
         </section>
 
-        <section id="assuntos" class="secao">
-            <h2>O que aprendemos em AMC?</h2>
+        <hr>
 
-            <div class="cards">
-
-                <article class="card">
-                    <h3>Algoritmos</h3>
-                    <p>
-                        São sequências de instruções organizadas para resolver
-                        problemas ou realizar tarefas. Eles ajudam a entender
-                        como um programa deve funcionar passo a passo.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Lógica de programação</h3>
-                    <p>
-                        É a forma de organizar o raciocínio para criar
-                        soluções. Utiliza decisões, condições e sequências
-                        para que o computador execute determinadas tarefas.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h3>Modelagem</h3>
-                    <p>
-                        Consiste em representar uma situação ou problema
-                        de forma organizada, facilitando seu entendimento
-                        e a criação de uma possível solução.
-                    </p>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="projetos" class="secao">
-            <h2>Meus projetos</h2>
+        <section id="placa">
+            <h2>2. Peças da placa-mãe</h2>
 
             <p>
-                Confira alguns exemplos de projetos que representam
-                ideias que podem ser desenvolvidas durante o aprendizado.
+                A placa-mãe é uma das principais peças do computador.
+                Ela conecta todos os componentes e permite que eles
+                troquem informações entre si.
             </p>
 
-            <div class="cards">
+            <h3>Principais componentes:</h3>
 
-                <article class="card projeto">
-                    <h3>Projeto 01 — Site de estudos</h3>
+            <ul>
+                <li><strong>Processador (CPU):</strong> executa instruções e cálculos.</li>
 
-                    <p>
-                        Uma página web criada para organizar conteúdos
-                        escolares, apresentar explicações e ajudar estudantes
-                        a revisar assuntos de forma simples.
-                    </p>
+                <li><strong>Memória RAM:</strong> armazena temporariamente os dados utilizados.</li>
 
-                    <span class="tag">HTML e CSS</span>
-                </article>
+                <li><strong>Chipset:</strong> auxilia na comunicação entre os componentes.</li>
 
-                <article class="card projeto">
-                    <h3>Projeto 02 — Organizador de tarefas</h3>
+                <li><strong>Slots de memória:</strong> locais onde são instaladas as memórias RAM.</li>
 
-                    <p>
-                        Um projeto que busca organizar atividades diárias,
-                        permitindo visualizar tarefas, separar prioridades
-                        e melhorar a rotina de estudos.
-                    </p>
+                <li><strong>Conectores SATA:</strong> permitem conectar HDs e SSDs.</li>
 
-                    <span class="tag">Lógica e programação</span>
-                </article>
+                <li><strong>Slot PCI Express:</strong> utilizado para placas de vídeo e outras placas de expansão.</li>
 
-            </div>
+                <li><strong>Bateria CMOS:</strong> ajuda a manter as configurações do relógio e da BIOS.</li>
+
+                <li><strong>Conector de energia:</strong> recebe energia da fonte de alimentação.</li>
+            </ul>
         </section>
 
-        <section id="contato" class="secao contato">
-            <h2>Contato</h2>
+        <hr>
+
+        <section id="tipos">
+            <h2>3. Tipos de computador</h2>
 
             <p>
-                Este espaço representa uma área de contato e troca de ideias
-                sobre tecnologia, programação e projetos.
+                Existem vários tipos de computadores, cada um com
+                características e funções diferentes.
             </p>
 
-            <a class="botao" href="#inicio">Voltar ao início</a>
+            <ul>
+                <li>
+                    <strong>Desktop:</strong>
+                    computador de mesa utilizado em casas, escolas e empresas.
+                </li>
+
+                <li>
+                    <strong>Notebook:</strong>
+                    computador portátil que pode ser transportado facilmente.
+                </li>
+
+                <li>
+                    <strong>All-in-One:</strong>
+                    computador que possui seus componentes integrados ao monitor.
+                </li>
+
+                <li>
+                    <strong>Servidor:</strong>
+                    computador responsável por fornecer serviços e informações
+                    para outros dispositivos.
+                </li>
+
+                <li>
+                    <strong>Tablet:</strong>
+                    dispositivo portátil com tela sensível ao toque.
+                </li>
+
+                <li>
+                    <strong>Supercomputador:</strong>
+                    computador de alto desempenho utilizado em cálculos complexos.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="seguranca">
+            <h2>4. Segurança ao mexer no computador</h2>
+
+            <p>
+                Ao realizar a manutenção de um computador, devemos
+                tomar alguns cuidados para evitar acidentes e danos
+                aos componentes.
+            </p>
+
+            <h3>Cuidados importantes:</h3>
+
+            <ul>
+                <li>Desligar o computador antes de abrir o gabinete.</li>
+
+                <li>Desconectar o cabo de energia da tomada.</li>
+
+                <li>Evitar tocar diretamente nos contatos das peças.</li>
+
+                <li>Utilizar pulseira antiestática quando necessário.</li>
+
+                <li>Não mexer nos componentes com as mãos molhadas.</li>
+
+                <li>Manter líquidos longe dos equipamentos.</li>
+
+                <li>Utilizar ferramentas adequadas.</li>
+
+                <li>Nunca abrir a fonte de alimentação, pois ela pode armazenar cargas elétricas perigosas.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="sistemas">
+            <h2>5. Sistemas operacionais</h2>
+
+            <p>
+                O sistema operacional é o principal software do computador.
+                Ele gerencia o hardware e permite que o usuário utilize
+                programas e aplicativos.
+            </p>
+
+            <h3>Exemplos de sistemas operacionais:</h3>
+
+            <ul>
+                <li><strong>Windows:</strong> desenvolvido pela Microsoft.</li>
+
+                <li><strong>Linux:</strong> sistema de código aberto utilizado em computadores e servidores.</li>
+
+                <li><strong>macOS:</strong> sistema operacional utilizado nos computadores da Apple.</li>
+
+                <li><strong>Android:</strong> utilizado principalmente em celulares e tablets.</li>
+
+                <li><strong>iOS:</strong> sistema operacional utilizado nos iPhones.</li>
+            </ul>
+
+            <h3>Principais funções:</h3>
+
+            <ul>
+                <li>Gerenciar arquivos e pastas.</li>
+                <li>Controlar os dispositivos do computador.</li>
+                <li>Executar programas.</li>
+                <li>Gerenciar a memória e o processador.</li>
+                <li>Permitir a interação entre o usuário e o computador.</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="conclusao">
+            <h2>Conclusão</h2>
+
+            <p>
+                A Arquitetura e Manutenção de Computadores é importante
+                para entender como os computadores funcionam.
+                Conhecer a BIOS, as peças da placa-mãe, os tipos de
+                computadores, a segurança e os sistemas operacionais
+                ajuda a utilizar e realizar a manutenção dos equipamentos
+                corretamente.
+            </p>
         </section>
 
     </main>
 
+    <hr>
+
     <footer>
-        <p>Projeto desenvolvido para atividade de HTML5 e CSS3.</p>
-        <p>Aprendendo e evoluindo na tecnologia 🌿</p>
+        <p>Trabalho de AMC - Arquitetura e Manutenção de Computadores.</p>
+        <p>Desenvolvido para fins educacionais.</p>
     </footer>
 
 </body>
-</html>
+    </html>
